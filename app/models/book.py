@@ -6,6 +6,7 @@ class Book:
         self.author = author
 
     def __str__(self) -> str:
-        return f'''Номер книги: {self.index}
+        return f'''
+Номер книги: {self.index}
 Имя книги: {self.name}
 Автор: {self.author}'''
