@@ -1,7 +1,9 @@
 class Book:
-
-    def __init__(self, index: int, name: str, author: str):
-        self.index = index
+    _index = 0
+    def __init__(self, name: str, author: str):
+        Book._index += 1
+        self.index = Book._index
+        self._index += 1
         self.name = name
         self.author = author
 
