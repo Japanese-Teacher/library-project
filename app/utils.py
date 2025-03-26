@@ -11,7 +11,7 @@ def main() -> None:
     command = input('\nВведите команду: ')
     process_command(command)
     while command != '0':
-        if command != '1' and command != '2' and command != '3':
+        if command not in ['1', '2', '3']:
             print('\nВы ввели отсутствующую команду')
             print('\nПопробуйте снова')
         open_menu()
