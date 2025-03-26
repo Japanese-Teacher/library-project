@@ -17,3 +17,5 @@ def edit_book(index: int) -> None:
         print('\nВведите нового автора: ')
         new_author = input()
         book_list[index].author = new_author
+    else:
+        print('\nТакого параметра не существует')
